@@ -68,7 +68,7 @@ path_df<-read.csv("../tables/Table1_sites_R.csv", header=TRUE, sep=",")
 
 path_df
 
-#FIGURE 1 - Temp/pH samples distribution
+#Temp/pH samples distribution
 ggplot(path_df, aes(x=temp,y=ph)) + 
 geom_point(size=8,shape=21,aes(fill=type),stroke=.3) + 
 #geom_text(aes(label=id)) +
@@ -82,7 +82,7 @@ theme(aspect.ratio = 1/2)
 
 #Phyloseq object
 
-#otu_table relative abundance
+#otu_table 
 otu_table_don<-read.csv("../16S_tables/otu_table.csv",header=T,sep=",",row.names=1)
 otu_table_cr17<-otu_table(as.matrix(otu_table_don),taxa_are_rows = TRUE)
 
@@ -90,8 +90,10 @@ otu_table_cr17<-otu_table(as.matrix(otu_table_don),taxa_are_rows = TRUE)
 taxa_table_don<-read.csv("../16S_tables/taxonomy_table.csv",header=T,sep=",",row.names=1)
 taxa_cr17<-tax_table(as.matrix(taxa_table_don))
 
+#tree
 bac_tree <- read_tree("../16S_tables/bac_tree.tre")
 
+#refseq
 bac_refseq <- readDNAStringSet("../16S_tables/bac_repset.fasta")
 
 sample_namecr17<-read.csv("../16S_tables/cr17_sample.csv",header=T,sep=",",row.names=1)
@@ -102,7 +104,8 @@ bac_data<-phyloseq(sample_data(sample_namecr17),
                    tax_table(taxa_cr17), 
                    phy_tree(bac_tree),
                    refseq(bac_refseq))
-bac_data #already normalized by the libraries median size 
+
+bac_data #already normalized by the library median size 
 
 ## Subset and aggreate the dataset based on taxonomic level to ease computational work downstream
 # Check the number of aggregated taxa
