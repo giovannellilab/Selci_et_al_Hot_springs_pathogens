@@ -96,7 +96,7 @@ bac_tree <- read_tree("../16S_tables/bac_tree.tre")
 #refseq
 bac_refseq <- readDNAStringSet("../16S_tables/bac_repset.fasta")
 
-sample_namecr17<-read.csv("../16S_tables/cr17_sample.csv",header=T,sep=",",row.names=1)
+sample_namecr17<-read.csv("../16S_tables/hotsprings_pathogen_env_data.csv",header=T,sep=",",row.names=1)
 
 #ASV with less than 5 reads were filtered
 bac_data<-phyloseq(sample_data(sample_namecr17),
