@@ -17,6 +17,7 @@ The repository contains the following files:
 - README.md (this readme file)
 - Selci_et_al_16SrRNA_analysis.r (the r code to reproduce the figures)
 - pathogensCR_dataset.csv (the environmental dataset)
+- a series of .csv files to replicate the figures and analyses reported in the paper
 
 Please cite as:
 
