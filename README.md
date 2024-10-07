@@ -21,4 +21,4 @@ The repository contains the following files:
 
 Please cite as:
 
-Matteo Selci, Monica Correggia, Angelina Cordone, Marco Guida, Grazia Marina Quero, Roberta Piredda, Costantino Vetriani, Carlos Ramirez, Karen G. Lloyd, J. Maarten de Moor, Peter H. Barry, Matthew O. Schrenk and Donato Giovannelli. 2023. Recreational hot springs as environmental reservoir of potential multidrug-resistant pathogens. _Submitted_
+Matteo Selci, Monica Correggia, Angelina Cordone, Marco Guida, Grazia Marina Quero, Roberta Piredda, Costantino Vetriani, Carlos Ramirez, Karen G. Lloyd, J. Maarten de Moor, Peter H. Barry, Matthew O. Schrenk and Donato Giovannelli. 2023. Recreational hot springs as environmental reservoir of potential multidrug-resistant pathogens. _Published_
